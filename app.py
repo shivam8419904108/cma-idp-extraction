@@ -42,11 +42,15 @@ if uploaded_file is not None:
         value=200
     )
 
-    run_ocr = False
+run_ocr = st.checkbox(
+    "Run OCR extraction",
+    value=True,
+    help="Extract text, amounts, and coordinates using Tesseract OCR."
+)
 
+if run_ocr:
     st.info(
-        "PDF preview is available. Cloud OCR is temporarily disabled "
-        "while the lightweight extraction engine is being configured."
+        "OCR is enabled. Start with a 1-page PDF at 200 DPI."
     )
 
     if st.button("Process PDF", type="primary"):
