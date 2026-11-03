@@ -1,0 +1,51 @@
+# Python environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Uploaded and generated files
+uploads/*
+processed/*
+output/*
+temp/*
+
+# Keep empty folders if required
+!uploads/.gitkeep
+!processed/.gitkeep
+!output/.gitkeep
+!temp/.gitkeep
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Environment and credentials
+.env
+*.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Financial documents
+*.pdf
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+
+# OCR models, if downloaded inside project
+.models/
+.easyocr/
